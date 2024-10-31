@@ -16,7 +16,11 @@
 
     <h1></h1> <!-- defines a heading (there are 6 of them i.e. h1 to h6 each being smaller than the last) -->
 
-    <a href=""></a> <!-- defines a hyperlink (i.e. a link connected to the text defined b/w the start <a> and the end </a> tags -->
+    <a href=""></a> <!-- defines a hyperlink (i.e. a link connected to the text in between the <a> and </a> tag), links can appear in 3 ways in all browsers
+        An unvisited link is underlined and blue
+        A visited link is underlined and purple
+        An active link is underlined and red
+        -->
 
     <img src="" alt=""> <!-- defines the mebeded image -->
 
@@ -73,7 +77,7 @@
     
     <img src="" alt="" width="" height="">
     <!--
-        src of <img> specifies the path of the image to be displayed, two way to specify 
+        src of <img> specifies the path of the image to be displayed, there are two way to specify it
             1. absolute url - path is a link
             2. relative url - path is the path of the img from the current dic
         alt of <img> specifies the alternative text of the image to be displayed
@@ -83,7 +87,10 @@
 
     <p style=""> </p> 
     <!--
-        style specifies which all type of styles (color, font, size, and more.) is used for that element
+        style specifies which all type of styles (color, font, size, and more.) is used for that element, there are 3 types of style
+            1. inline css, using style attribute in html elements
+            2. internal css, using <style> element in the <head>
+            3. external css, using <link> element to link to an external CSS file in the <head>
     -->
     
     <html lang="en"> </html>
@@ -94,7 +101,7 @@
     <!-- 
         title defines some extra information about an element in the form of a tooltip
     -->
-    
+
 
 
     <!-- html style property -->
@@ -123,24 +130,59 @@
     <!--
         text-align propery defines the give text-align value for the tag which it is defined in    
     -->
-    
+    <p style="border:value ;"> </p>
+    <!--
+        defines a border around an HTML element
+    -->
+
+    <p style="padding:value ;"> </p>
+    <!--
+        defines a padding (space) between the text and the border
+    -->
+
+    <p style="margin:value ;"> </p>
+    <!--
+        defines a margin (space) outside the border
+    -->
+
     <!-- html colors-->
 
     <!--
-    RGB 
-    rgb(red,blue,green)
-     
-    argb(red,blue,green,alpha)
+        RGB 
+            rgb(red,blue,green)
+                red, blue and green is from 0 to 255
+                    rgb(0, 0, 0) - defines the color black
+                    rgb(255, 255, 255) - defines the color while
+        
+        ARGB
+            argb(red,blue,green,alpha) - uses values of 0 to 255
+                red, blue and green is the same as before
+                alpha is from 0 to 1, 0 being fully transparent and 1 being not at all transparent
+                    rgba(x, x, x, 0) defines fully transparent
+                    rgba(x, x, x, 1) dentines not transparent at all
+ 
+        HEX 
+            #rrggbb
+                rr, gg and bb is from 00 to ff or FF
+                    #000000 - defines the color black
+                    #ffffff - defines the color while
+
+        HSL 
+            hsl(hue, saturation(%), lightness(%))
+                hue is from 0 to 360. 0 being red, 120 being green and 240 being blue
+                saturation is from 0% too 100%, 0% being a shade of greay and 100% being the full color
+                lighness is aslo from 0% too 100%, 0% being black and 100% being white
+                    hsl(0, 0%, 100%) - defines the color black
+                    hsl(0, 0%, 0%) - defines the color while
+        
+            HSLA
+            hsla(hue, saturation(%), lightness(%), alpha)
+                hue, saturation and lighness is the smae as before
+                alpha is from 0 to 1, 0 being fully transparent and 1 being not at all transparent
+                    hsl(0, 0%, 0%, 0) - dentines transparent at all
+                    hsl(0, 0%, 0%, 1) - dentines not transparent at all
+                
     -->
 
-    <!--
-    HEX 
-    hex#rrggbb
-    -->
-
-    <!--
-    HSL 
-    hsl(hue, saturation, lightness)
-    -->
 </body>
 </html>
